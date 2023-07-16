@@ -16,3 +16,11 @@ print("Print elements in first column:")
 for rowIndex in df.index:
     print(df['W'][rowIndex])
 print("--------------------------------")
+
+print("Read data from CSV and format output as following:\n")
+ReportData = pd.read_csv("TestingFile.csv")
+# print(ReportData)
+
+for i in range(len(ReportData)):
+    print(ReportData.iloc[i,0],'->',ReportData.iloc[i,0],'->',ReportData.iloc[i,3])
+print("--------------------------------")
