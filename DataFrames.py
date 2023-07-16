@@ -9,5 +9,10 @@ E = [7,8,9,0]
 
 #Define dataframe
 df = pd.DataFrame(data = [A,B,C,D,E],index = ['a','b','c','d','e'], columns = ['W', 'X', 'Y', 'Z'])
-print("DataFrame:\n\n", df,"\n")
-print("Print element from first column and first row: ",df['W'][0])
+print("DataFrame:\n\n", df,"\n--------------------------------\n")
+print("Print element from first column and first row: ",df['W'][0],"\n--------------------------------\n")
+
+print("Print elements in first column:")
+for rowIndex in df.index:
+    print(df['W'][rowIndex])
+print("--------------------------------")
